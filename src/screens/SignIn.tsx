@@ -26,6 +26,8 @@ export function SignIn() {
         mb={4}
         placeholder="E-mail"
         InputLeftElement={<Icon as={<Envelope color={colors.gray[300]} />} ml={4} />}
+        keyboardType="email-address"
+        autoCapitalize='none'
         onChangeText={setName}
       />
       <Input
@@ -33,6 +35,7 @@ export function SignIn() {
         placeholder="Senha"
         InputLeftElement={<Icon as={<Key color={colors.gray[300]} />} ml={4} />}
         secureTextEntry
+        autoCapitalize='none'
         onChangeText={setPassword}
       />
       <Button
